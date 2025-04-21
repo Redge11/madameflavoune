@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeaux Crochet - Madame Flavoune</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Alleron&display=swap" rel="stylesheet">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <style>
+        .hero-band {
+            background: linear-gradient(rgba(170, 65, 81, 0.2), rgba(203, 16, 44, 0.2)), 
+                        url('../assets/img/maxresdefault.jpg') center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 90px;
+        }
+        
+        .product-detail {
+            display: flex;
+            gap: 50px;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+        
+        .product-gallery {
+            flex: 1;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="../index.html">
+            <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Logo Madame Flavoune" class="logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            
+            <!-- Item avec menu déroulant -->
+            <div class="dropdown">
+                <a href="#creations" class="dropdown-btn">Créations <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="bandeaux.html">Bandeaux</a>
+                    <a href="sacs.html">Sacs</a>
+                    <a href="pochettes.html">Pochettes</a>
+                    <a href="accessoires.html">Accessoires</a>
+                    <a href="decorations.html">Décorations</a>
+                </div>
+            </div>
+            
+            <a href="../index.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-band">
+        <div>
+            <h1>Bandeaux Crochet</h1>
+            <p class="subtitle">Élégance artisanale pour chevelure</p>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <h2>L'Art du Bandeau</h2>
+            <p>Chaque bandeau est une pièce unique, réalisée main avec des fils de qualité supérieure. Découvrez des créations qui allient confort et style, parfaites pour toutes les occasions.</p>
+        </div>
+    </section>
+
+    <section class="product-showcase">
+        <div class="container">
+            <!-- Produit 1 -->
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.svg" alt="Bandeau Floral" class="main-img">
+                    <div class="thumbnails">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Détail">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Porté">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Bandeau Floral Printanier</h3>
+                    <p class="price">34,00 €</p>
+                    <div class="description">
+                        <p>Inspiré des jardins français, ce bandeau délicat présente des motifs floraux complexes réalisés au point de rose. La doublure en soie garantit un confort optimal.</p>
+                        <ul>
+                            <li>✔ 100% coton mercerisé</li>
+                            <li>✔ Ajustable (tour de tête 54-60cm)</li>
+                            <li>✔ Lavage main à 30°C</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Commander</button>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-detail reverse">
+                <div class="product-info">
+                    <h3>Bandeau Élégance Hivernale</h3>
+                    <p class="price">42,00 €</p>
+                    <div class="description">
+                        <p>Chaud et sophistiqué, ce bandeau en laine mérinos est idéal pour l'hiver. Les perles artisanales ajoutent une touche de luxe discret.</p>
+                        <ul>
+                            <li>✔ Laine mérinos ultra-douce</li>
+                            <li>✔ Perles en verre soufflé</li>
+                            <li>✔ Fabriqué sur mesure</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Commander</button>
+                </div>
+                <div class="product-gallery">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Bandeau Hiver" class="main-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="care-section">
+        <div class="container">
+            <h2>Conseils d'Entretien</h2>
+            <div class="care-grid">
+                <div class="care-card">
+                    <i class="fas fa-hand-holding-water"></i>
+                    <h4>Lavage</h4>
+                    <p>Lavage à la main avec un détergent doux. Éviter l'eau de Javel.</p>
+                </div>
+                <div class="care-card">
+                    <i class="fas fa-wind"></i>
+                    <h4>Séchage</h4>
+                    <p>À plat sur une serviette, à l'abri du soleil direct.</p>
+                </div>
+                <div class="care-card">
+                    <i class="fas fa-box-open"></i>
+                    <h4>Stockage</h4>
+                    <p>Conserver plié dans un endroit sec, idéalement avec des boules de cèdre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="crochet-footer">
+        <div class="footer-container">
+            <!-- Colonne Créations -->
+            <div class="footer-section">
+                <h3>MES CRÉATIONS</h3>
+                <ul>
+                    <li><a href="bandeaux.html">Bandeaux</a></li>
+                    <li><a href="sacs.html">Sacs</a></li>
+                    <li><a href="pochettes.html">Pochettes</a></li>
+                    <li><a href="accessoires.html">Accessoires</a></li>
+                </ul>
+            </div>
+    
+            <!-- Colonne Communauté -->
+            <div class="footer-section">
+                <h3>COMMUNAUTÉ</h3>
+                <ul class="social-list">
+                    <li><a href="#"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+    
+            <!-- Colonne Informations -->
+            <div class="footer-section">
+                <h3>INFORMATIONS</h3>
+                <ul>
+                    <li><a href="cgv.html">Conditions de vente</a></li>
+                    <li><a href="confidentialite.html">Confidentialité</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Logo et copyright -->
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo-link">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Madame Flavoune - Retour à l'accueil" class="footer-logo-img">
+                </a>
+                <div class="copyright">
+                    « Fait avec ❤️ et du fil à crochet »<br>
+                    <span>© 2023 Madame Flavoune - Tous droits réservés</span>
+                </div>
+            </div>
+        </div>
+        <script src="../script/script.js" defer></script>
+</body>
+</html>

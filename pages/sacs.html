@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacs Crochet - Madame Flavoune</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Alleron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-sacs {
+            background: linear-gradient(rgba(170, 65, 81, 0.2), rgba(203, 16, 44, 0.2)), 
+                        url('../assets/img/Le-plus-beau-sac-en-crochet-de-l-ete-est-signe-Carel-et-Seasters.jpg') center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 90px;
+        }
+        
+        .product-detail {
+            display: flex;
+            gap: 50px;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+        
+        .product-gallery {
+            flex: 1;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Logo Madame Flavoune" class="logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Accueil</a>
+            
+            <div class="dropdown">
+                <a href="#creations" class="dropdown-btn">Créations <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="bandeaux.html">Bandeaux</a>
+                    <a href="sacs.html" class="active">Sacs</a>
+                    <a href="pochettes.html">Pochettes</a>
+                    <a href="accessoires.html">Accessoires</a>
+                    <a href="decorations.html">Décorations</a>
+                </div>
+            </div>
+            
+            <a href="../index.html#about">À propos</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-sacs">
+        <div>
+            <h1>Sacs Crochet</h1>
+            <p class="subtitle">Élégance artisanale à porter au quotidien</p>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <h2>L'Art du Sac Crocheté</h2>
+            <p>Chaque sac est une pièce unique, réalisée main avec des fils de qualité supérieure. Découvrez des créations qui allient utilité et style, parfaites pour toutes vos sorties.</p>
+        </div>
+    </section>
+
+    <section class="product-showcase">
+        <div class="container">
+            <!-- Produit 1 -->
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Sac Panier Élégant" class="main-img">
+                    <div class="thumbnails">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Détail du tissage">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Porté à l'épaule">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sac Panier Élégant</h3>
+                    <p class="price">45,00 €</p>
+                    <div class="description">
+                        <p>Inspiré des sacs provençaux, ce panier crocheté en fibre naturelle présente des motifs géométriques complexes. La doublure en coton et les anses en cuir garantissent solidité et confort.</p>
+                        <ul>
+                            <li>✔ Fibre de jute et coton bio</li>
+                            <li>✔ Dimensions : 30 x 25 x 15 cm</li>
+                            <li>✔ Doublure amovible lavable</li>
+                            <li>✔ Fermeture par bouton en bois</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Commander</button>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-detail reverse">
+                <div class="product-info">
+                    <h3>Pochette Bohème</h3>
+                    <p class="price">38,00 €</p>
+                    <div class="description">
+                        <p>Léger et pratique, ce petit sac crocheté en fil de coton mercerisé est idéal pour vos soirées. Les perles artisanales et franges ajoutent une touche bohème chic.</p>
+                        <ul>
+                            <li>✔ 100% coton mercerisé</li>
+                            <li>✔ Dimensions : 20 x 15 cm</li>
+                            <li>✔ Chaîne en métal doré</li>
+                            <li>✔ Lavage main à 30°C</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Commander</button>
+                </div>
+                <div class="product-gallery">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Pochette Bohème" class="main-img">
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Sac Plage" class="main-img">
+                    <div class="thumbnails">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Détail des motifs">
+                        <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Capacité spacieuse">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sac Plage Étoile de Mer</h3>
+                    <p class="price">52,00 €</p>
+                    <div class="description">
+                        <p>Spacieux et résistant, ce sac de plage crocheté en fil résistant à l'eau salée présente de délicats motifs marins. Parfait pour vos vacances avec ses poches intérieures pratiques.</p>
+                        <ul>
+                            <li>✔ Fil polypropylène résistant</li>
+                            <li>✔ Dimensions : 40 x 35 cm</li>
+                            <li>✔ 3 poches intérieures</li>
+                            <li>✔ Lavable à la machine</li>
+                        </ul>
+                    </div>
+                    <button class="btn">Commander</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="care-section">
+        <div class="container">
+            <h2>Conseils d'Entretien</h2>
+            <div class="care-grid">
+                <div class="care-card">
+                    <i class="fas fa-hand-holding-water"></i>
+                    <h4>Lavage</h4>
+                    <p>La plupart de nos sacs se lavent à la main avec un détergent doux. Éviter l'eau de Javel.</p>
+                </div>
+                <div class="care-card">
+                    <i class="fas fa-sun"></i>
+                    <h4>Conservation</h4>
+                    <p>Éviter l'exposition prolongée au soleil pour préserver les couleurs.</p>
+                </div>
+                <div class="care-card">
+                    <i class="fas fa-weight-hanging"></i>
+                    <h4>Chargement</h4>
+                    <p>Respecter le poids maximal recommandé pour chaque modèle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="crochet-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MES CRÉATIONS</h3>
+                <ul>
+                    <li><a href="bandeaux.html">Bandeaux</a></li>
+                    <li><a href="sacs.html" class="active">Sacs</a></li>
+                    <li><a href="pochettes.html">Pochettes</a></li>
+                    <li><a href="accessoires.html">Accessoires</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>COMMUNAUTÉ</h3>
+                <ul class="social-list">
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>INFORMATIONS</h3>
+                <ul>
+                    <li><a href="cgv.html">Conditions de vente</a></li>
+                    <li><a href="confidentialite.html">Confidentialité</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo-link">
+                    <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Madame Flavoune" class="footer-logo-img">
+                </a>
+                <div class="copyright">
+                    « Fait avec ❤️ et du fil à crochet »<br>
+                    <span>© 2023 Madame Flavoune</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js" defer></script>
+</body>
+</html>
