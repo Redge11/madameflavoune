@@ -37,16 +37,26 @@
     </nav>
 </header>
     
-    <section class="hero" id="home">
-        <h1>Créations uniques au crochet</h1>
-        <p>Découvrez des pièces artisanales faites main avec passion et délicatesse</p>
-        <a href="#about" class="btn">Découvrir l'artisane</a>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Créations Uniques au Crochet</h1>
+        <p class="hero-subtitle">Pièces artisanales faites main avec passion</p>
+        <div class="hero-buttons">
+            <a href="#creations" class="btn btn-primary">Découvrir</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+    </div>
+    
+    <!-- Élément décoratif -->
+    <div class="hero-decor">
+        <div class="stitch-animation"></div>
+    </div>
+</section>
     
     <section class="about" id="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Madame Flavoune au travail">
+                <img src="assets/img/flaIA.png" alt="Madame Flavoune au travail">
             </div>
             <div class="about-content">
                 <h2>À propos de Madame Flavoune</h2>
@@ -58,30 +68,33 @@
         </div>
     </section>
     
-    <section class="gallery" id="gallery">
+    <section class="categories">
         <h2>Nos Catégories</h2>
-        <div class="grid">
-            <a href="pages/bandeaux.html" class="grid-item">
-                <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Bandeaux">
-                <div class="overlay">
-                    <h3>Bandeaux</h3>
-                    <p>Accessoires élégants pour cheveux</p>
+        <div class="categories-grid">
+            <!-- Bandeaux -->
+            <a href="pages/bandeaux.html" class="category-card">
+                <h3 class="category-title">Bandeaux</h3>
+                <div class="category-image">
+                    <img src="assets/img/bandeauIA.png" alt="Bandeaux crochet">
+                    <div class="category-overlay"></div>
                 </div>
             </a>
             
-            <a href="pages/sacs.html" class="grid-item">
-                <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Sacs">
-                <div class="overlay">
-                    <h3>Sacs</h3>
-                    <p>Poches pratiques et stylées</p>
+            <!-- Sacs -->
+            <a href="pages/sacs.html" class="category-card">
+                <h3 class="category-title">Sacs</h3>
+                <div class="category-image">
+                    <img src="assets/img/sacIA.png" alt="Sacs crochet">
+                    <div class="category-overlay"></div>
                 </div>
             </a>
             
-            <a href="creations/pochettes.html" class="grid-item">
-                <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Pochettes">
-                <div class="overlay">
-                    <h3>Pochettes</h3>
-                    <p>Petits compagnons du quotidien</p>
+            <!-- Pochettes -->
+            <a href="pages/bandeaux.html" class="category-card">
+                <h3 class="category-title">Pochettes</h3>
+                <div class="category-image">
+                    <img src="assets/img/pochetteIA.png" alt="Pochettes crochet">
+                    <div class="category-overlay"></div>
                 </div>
             </a>
         </div>
@@ -147,7 +160,8 @@
                 </a>
                 <div class="copyright">
                     « Fait avec ❤️ et du fil à crochet »<br>
-                    <span>© 2023 Madame Flavoune - Tous droits réservés</span>
+                    <span>© 2023 Madame Flavoune - Tous droits réservés </span>
+                    <a href="https://redge11.github.io/redgeportfolio/" class="designer-link">Design redge1</a>
                 </div>
             </div>
         </div>

@@ -908,3 +908,233 @@ h1, h2, h3, h4, h5, h6 {
         display: none; /* Désactive le soulignement sur mobile */
     }
 }
+/* Section Catégories */
+.categories {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.categories h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    padding: 0 15px;
+}
+
+.category-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.category-card:hover .category-image img {
+    transform: scale(1.05);
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(203, 16, 44, 0.7), transparent);
+    z-index: 1;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+    }
+    /* Effet Shine */
+}
+.category-image::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255,255,255,0) 45%,
+        rgba(255,255,255,0.8) 50%,
+        rgba(255,255,255,0) 55%
+    );
+    transform: rotate(30deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category-card:hover .category-image::after {
+    opacity: 1;
+    transition-duration: 1s;
+}
+/* Correction pour les liens */
+.category-card {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Hérite la couleur du texte parent */
+}
+
+/* Effet de hover amélioré */
+.category-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(203, 16, 44, 0.2);
+}
+
+/* Indicateur visuel de clic */
+.category-card:active {
+    transform: translateY(-5px) scale(0.98);
+}
+
+/* Accessibilité : focus visible */
+.category-card:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+.designer-link {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-bottom: 1px dashed currentColor;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background: 
+        linear-gradient(rgba(255, 206, 200, 0.1), rgba(203, 16, 44, 0.2)),
+        url('../assets/img/composition-with-threads-yarn-knitting-closeup.jpg') center/cover no-repeat;
+    margin-top: 90px; /* Ajustez selon la hauteur de votre header */
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero h1 {
+    font-family: 'Alleron', sans-serif;
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+/* Élément décoratif animé */
+.stitch-animation {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    width: 150px;
+    height: 150px;
+    background: url('') no-repeat;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin: 0 auto 2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .stitch-animation {
+        display: none;
+    }
+}
