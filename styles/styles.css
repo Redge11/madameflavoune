@@ -1138,3 +1138,80 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 }
+
+/* affichage produit */
+@media (max-width: 768px) {
+    .product-detail {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 15px;
+    }
+  
+    .product-info, .product-gallery {
+      flex: none;
+      width: 100%;
+    }
+  
+    .product-info {
+      padding: 0 10px;
+    }
+  
+    .thumbnails {
+      justify-content: center;
+    }
+  }
+  /* Base mobile */
+@media (max-width: 480px) {
+    html {
+      font-size: 14px;
+    }
+  
+    body {
+      padding-top: 60px; /* Espace pour le header */
+    }
+  
+    /* Hero section */
+    .hero h1 {
+      font-size: 2rem;
+      padding: 0 15px;
+    }
+  
+    /* Boutons */
+    .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    /* Grille catégories */
+    .categories-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .footer-logo-img {
+      height: 100px;
+    }
+  }@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  
+    .footer-logo-img {
+      height: 100px;
+    }
+  }
