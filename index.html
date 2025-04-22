@@ -11,38 +11,83 @@
 </head>
 <body>
     <!-- Modification dans le HTML (header) -->
-<header class="header">
-    <div class="logo-container">
-        <a href="index.html">
-        <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Logo Madame Flavoune" class="logo">
-        </a>
-    </div>
-    <nav class="nav-links">
-        <a href="index.html">Accueil</a>
-        
-        <!-- Item avec menu déroulant -->
-        <div class="dropdown">
-            <a href="#creations" class="dropdown-btn">Créations <i class="fas fa-chevron-down"></i></a>
-            <div class="dropdown-content">
-                <a href="pages/bandeaux.html">Bandeaux</a>
-                <a href="pages/sacs.html">Sacs</a>
-                <a href="pochettes.html">Pochettes</a>
-                <a href="accessoires.html">Accessoires</a>
-                <a href="decorations.html">Décorations</a>
-            </div>
+    <header class="main-header">
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">
+              <img src="assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Madame Flavoune" class="logo-img">
+            </a>
+          </div>
+      
+          <!-- Navigation Desktop -->
+          <nav class="desktop-nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              
+              <li class="dropdown">
+                <button class="dropdown-toggle">
+                  Créations
+                  <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="pages/bandeaux.html" class="dropdown-item">Bandeaux</a></li>
+                  <li><a href="pages/sacs.html" class="dropdown-item">Sacs</a></li>
+                  <li><a href="pages/pochettes.html" class="dropdown-item">Pochettes</a></li>
+                  <li><a href="pages/accessoires.html" class="dropdown-item">Accessoires</a></li>
+                  <li><a href="pages/decorations.html" class="dropdown-item">Décorations</a></li>
+                </ul>
+              </li>
+              
+              <li><a href="#about" class="nav-link">À propos</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Bouton Mobile -->
+          <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
         </div>
-        
-        <a href="about.html">À propos</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+      
+        <!-- Navigation Mobile -->
+        <div class="mobile-nav-overlay"></div>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+            
+            <li class="mobile-dropdown">
+              <button class="mobile-dropdown-toggle">
+                Créations
+                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="pages/bandeaux.html" class="mobile-dropdown-item">Bandeaux</a></li>
+                <li><a href="pages/sacs.html" class="mobile-dropdown-item">Sacs</a></li>
+                <li><a href="pages/pochettes.html" class="mobile-dropdown-item">Pochettes</a></li>
+                <li><a href="pages/accessoires.html" class="mobile-dropdown-item">Accessoires</a></li>
+                <li><a href="pages/decorations.html" class="mobile-dropdown-item">Décorations</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#about" class="mobile-nav-link">À propos</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
     
 <section class="hero">
     <div class="hero-content">
         <h1>Créations Uniques au Crochet</h1>
         <p class="hero-subtitle">Pièces artisanales faites main avec passion</p>
         <div class="hero-buttons">
-            <a href="#creations" class="btn btn-primary">Découvrir</a>
+            <a href="#about" class="btn btn-primary">Découvrir</a>
             <a href="#contact" class="btn btn-outline">Contact</a>
         </div>
     </div>
@@ -100,24 +145,78 @@
         </div>
     </section>
     
-    <section class="contact" id="contact">
-        <h2>Contactez-moi</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nom</label>
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-header">
+            <h2>Passer commande</h2>
+            <p>Toutes vos demandes de création sur mesure se font via ce formulaire</p>
+            <div class="stitch-decoration"></div>
+          </div>
+      
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet*</label>
                 <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email*</label>
                 <input type="email" id="email" name="email" required>
+              </div>
             </div>
+      
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+              <label for="category">Type de création*</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Sélectionnez...</option>
+                <option value="sac">Sac</option>
+                <option value="pochette">Pochette</option>
+                <option value="bandeau">Bandeau</option>
+                <option value="accessoire">Accessoire</option>
+                <option value="decoration">Décoration</option>
+                <option value="autre">Autre</option>
+              </select>
             </div>
-            <button type="submit" class="btn">Envoyer</button>
-        </form>
-    </section>
+      
+            <div class="form-row">
+              <div class="form-group">
+                <label for="size">Taille</label>
+                <select id="size" name="size">
+                  <option value="" disabled selected>Choisissez...</option>
+                  <option value="xs">XS</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                  <option value="sur-mesure">Sur mesure</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="color">Couleur souhaitée</label>
+                <input type="text" id="color" name="color" placeholder="Ex: Bleu ciel, Rose poudré...">
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Votre demande détaillée*</label>
+              <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos préférences de matière, le style souhaité..."></textarea>
+            </div>
+      
+            <div class="form-footer">
+              <button type="submit" class="btn-submit">
+                Envoyer ma demande
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <p class="required-hint">* Champs obligatoires</p>
+            </div>
+          </form>
+        </div>
+      </section>
     
     <footer class="crochet-footer">
         <div class="footer-container">
@@ -126,7 +225,7 @@
                 <h3>MES CRÉATIONS</h3>
                 <ul>
                     <li><a href="pages/bandeaux.html">Bandeaux</a></li>
-                    <li><a href="sacs.html">Sacs</a></li>
+                    <li><a href="pages/sacs.html">Sacs</a></li>
                     <li><a href="pochettes.html">Pochettes</a></li>
                     <li><a href="accessoires.html">Accessoires</a></li>
                 </ul>
@@ -149,7 +248,7 @@
                 <ul>
                     <li><a href="cgv.html">Conditions de vente</a></li>
                     <li><a href="confidentialite.html">Confidentialité</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
     

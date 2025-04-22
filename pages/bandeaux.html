@@ -39,31 +39,76 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <a href="../index.html">
-            <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Logo Madame Flavoune" class="logo">
+    <header class="main-header">
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="logo-wrapper">
+            <a href="../index.html" class="logo-link">
+              <img src="../assets/img/logo_crochet_pdp__2_-removebg-preview.png" alt="Madame Flavoune" class="logo-img">
             </a>
+          </div>
+      
+          <!-- Navigation Desktop -->
+          <nav class="desktop-nav">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              
+              <li class="dropdown">
+                <button class="dropdown-toggle">
+                  Créations
+                  <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="bandeaux.html" class="dropdown-item">Bandeaux</a></li>
+                  <li><a href="sacs.html" class="dropdown-item">Sacs</a></li>
+                  <li><a href="pages/pochettes.html" class="dropdown-item">Pochettes</a></li>
+                  <li><a href="pages/accessoires.html" class="dropdown-item">Accessoires</a></li>
+                  <li><a href="pages/decorations.html" class="dropdown-item">Décorations</a></li>
+                </ul>
+              </li>
+              
+              <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+              <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+      
+          <!-- Bouton Mobile -->
+          <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
         </div>
-        <nav class="nav-links">
-            <a href="../index.html">Accueil</a>
+      
+        <!-- Navigation Mobile -->
+        <div class="mobile-nav-overlay"></div>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="mobile-nav-link">Accueil</a></li>
             
-            <!-- Item avec menu déroulant -->
-            <div class="dropdown">
-                <a href="#creations" class="dropdown-btn">Créations <i class="fas fa-chevron-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="bandeaux.html">Bandeaux</a>
-                    <a href="sacs.html">Sacs</a>
-                    <a href="pochettes.html">Pochettes</a>
-                    <a href="accessoires.html">Accessoires</a>
-                    <a href="decorations.html">Décorations</a>
-                </div>
-            </div>
+            <li class="mobile-dropdown">
+              <button class="mobile-dropdown-toggle">
+                Créations
+                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <ul class="mobile-dropdown-menu">
+                <li><a href="bandeaux.html" class="mobile-dropdown-item">Bandeaux</a></li>
+                <li><a href="sacs.html" class="mobile-dropdown-item">Sacs</a></li>
+                <li><a href="pages/pochettes.html" class="mobile-dropdown-item">Pochettes</a></li>
+                <li><a href="pages/accessoires.html" class="mobile-dropdown-item">Accessoires</a></li>
+                <li><a href="pages/decorations.html" class="mobile-dropdown-item">Décorations</a></li>
+              </ul>
+            </li>
             
-            <a href="../index.html">À propos</a>
-            <a href="contact.html">Contact</a>
+            <li><a href="../index.html#about" class="mobile-nav-link">À propos</a></li>
+            <li><a href="../index.html#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <section class="hero-band">
         <div>
@@ -101,7 +146,7 @@
                             <li>✔ Lavage main à 30°C</li>
                         </ul>
                     </div>
-                    <button class="btn">Commander</button>
+                    <a href="../index.html#contact" class="btn">Commander</a>
                 </div>
             </div>
 
@@ -125,7 +170,8 @@
                             <li>✔ Lavage main à 30°C</li>
                         </ul>
                     </div>
-                    <button class="btn">Commander</button>
+                    <a href="../index.html#contact" class="btn">Commander</a>
+
                 </div>
             </div>
     </section>
